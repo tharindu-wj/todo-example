@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>TODO Example</title>
+
+    <style>
+        .todo-form label{
+            display: block;
+        }
+        #todo-preview{
+            height: 30px;
+        }
+        [data-status="yes"]{
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h2>TODO Example</h2>
+    <div class="row">
+        <div class="col-sm-6">
+            <form id="todo-add-form">
+                <div class="form-group">
+                    <label>Item Name</label>
+                    <input type="text" class="form-control" id="todo-input">
+                </div>
+                <button type="submit" class="btn btn-success">Add</button>
+            </form>
+            <h3 id="todo-preview">Your item will preview here</h3>
+
+            <a href="" class="btn btn-primary" id="btn-done">Make as done</a>
+            <a href="" class="btn btn-danger" id="btn-remove">Remove</a>
+        </div>
+        <div class="col-sm-6">
+            <div id="todo-form" class="todo-form">
+                <!-- List will append to here -->
+                <h3>Add items for display here..</h3>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="custom.js"></script>
+</html>
